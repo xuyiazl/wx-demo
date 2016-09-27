@@ -1,0 +1,9 @@
+.placeholder {
+    background-color: #ebebeb;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    margin: 10rpx;
+    font-size: 1em;
+    color: #cfcfcf;
+}

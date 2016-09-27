@@ -1,0 +1,31 @@
+@import "list.wxss";
+
+.ui-list .item .picture{
+    width: 180rpx;
+    height: 140rpx;
+    margin-right: 40rpx;
+    display: block;
+}
+.ui-list .item .name{
+    white-space:inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.ui-list .item .remark{
+    margin-top: 10rpx;
+    font-size: 13px;
+    color: #cecece;
+    display: block;
+}
+.ui-list .item .remark text{
+	float: left;
+    padding-right: 20rpx;
+    text-align: left;
+}
+.ui-list .item .remark text.extra{
+	padding-left: 20rpx;
+    border-left: 1px solid #CECECE;
+}

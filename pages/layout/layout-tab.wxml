@@ -1,0 +1,68 @@
+<view class="container">
+    <view class="block tabs">
+        <view class="row">
+            <block wx:for="{{tabs}}">
+                <view class="cloumn center">
+                    <view id="{{item.id}}" class="tab {{item.active?'active':''}}" bindtap="tab">
+                        <text>{{item.name}}</text>
+                        <view class="underline"></view>
+                    </view>
+                </view>
+            </block>
+        </view>
+	    <view class="line"></view>
+    </view>
+    <swiper class="tab-content" bindchange="tabchange" current="{{current}}" duration="{{duration}}">
+        <swiper-item>
+            <scroll-view scroll-y style="height:100%;">
+                    <view class="ui-list-image cloumn3">
+                        <block wx:for-items="{{list1}}">
+                            <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                                <view>
+                                    <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                                    <text class="name">{{item.title}}</text>
+                                </view>
+                            </navigator>
+                        </block>
+                    </view>
+	        </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y style="height:100%;" bindscroll="scroll" bindscrolltolower="lower">
+                <view class="ui-list">
+                    <block wx:for-items="{{list2}}">
+                        <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                            <view class="cell">
+                                <view class="cell-hd">
+                                    <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                                </view>
+                                <view class="cell-bd">
+                                    <text class="name">{{item.title}}</text>
+                                    <view class="remark">
+                                        <text>{{item.source}}</text>
+                                        <text>{{item.time}}</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="{{index > 0 ? 'line' : ''}}"></view>
+                        </navigator>
+                    </block>
+                </view>
+	        </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y style="height:100%;">
+                    <view class="ui-list-image cloumn3">
+                        <block wx:for-items="{{list3}}">
+                            <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                                <view>
+                                    <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                                    <text class="name">{{item.title}}</text>
+                                </view>
+                            </navigator>
+                        </block>
+                    </view>
+	        </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

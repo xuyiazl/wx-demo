@@ -1,0 +1,59 @@
+{
+  "pages":[
+    "pages/index",
+    "pages/layout/block",
+    "pages/layout/index",
+    "pages/layout/layout",
+    "pages/layout/layout-tab",
+    "pages/layout/result",
+    "pages/list/list",
+    "pages/list/listcontact",
+    "pages/list/listmedia",
+    "pages/list/listimage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#34495E",
+    "navigationBarTitleText": "demo",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar1": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/layout/index",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "布局"
+    },{
+      "pagePath": "pages/layout/layout-tab",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "tab布局"
+    },{
+      "pagePath": "pages/list/list",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "列表"
+    },{
+      "pagePath": "pages/list/listmedia",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "媒体列表"
+    },{
+      "pagePath": "pages/list/listimage",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "图片列表"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

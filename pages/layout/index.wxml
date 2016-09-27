@@ -1,0 +1,101 @@
+<view class="container">
+    <view class="block">
+        <view class="row">
+            <view class="cloumn">
+                <swiper style="height:200px" indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{swiperData}}">
+                    
+                        <swiper-item class="swiper-item">
+                        <navigator url="{{item.url}}">
+                            <image src="{{item.img}}"/>
+                            <text>{{item.text}}</text>
+                            </navigator>
+                        </swiper-item>
+                    
+                </block>
+                </swiper>
+            </view>
+        </view>
+        <view class="row center margin">
+            <block wx:for-items="{{navlist}}">
+                <view class="cloumn">
+                    <navigator url="{{item.url}}">
+                        <view class="nav-item">
+                            <image src="{{item.icon}}"></image>
+                            <text>{{item.text}}</text>
+                        </view>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+        <view class="line"></view>
+    </view>
+    <view class="block margin">
+        <view class="header">
+	        <view>热门新闻</view>
+	        <navigator class="more" url="#">更多</navigator>
+	    </view>
+        <view class="body">
+            <view class="ui-list-image cloumn2" style="margin-top:0;">
+                <block wx:for-items="{{list1}}">
+                    <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                        <view>
+                            <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                            <text class="name">{{item.title}}</text>
+                        </view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+        <view class="line t"></view>
+        <view class="line"></view>
+    </view>
+    <view class="block margin">
+        <view class="header">
+	        <view>左右切换</view>
+	        <navigator class="more" url="#">更多</navigator>
+	    </view>
+        <view class="body">
+            <scroll-view scroll-x="true" class="scroll-view-h">
+                <view class="ui-list-image cloumn2" style="margin-top:0;">
+                    <block wx:for-items="{{list1}}">
+                        <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                            <view>
+                                <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                            </view>
+                        </navigator>
+                    </block>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="line t"></view>
+        <view class="line"></view>
+    </view>
+    <view class="block">
+        <view class="header">
+	        <view>热门新闻</view>
+	        <navigator class="more" url="#">更多</navigator>
+	    </view>
+        <view class="body">
+            <view class="ui-list">
+                <block wx:for-items="{{list2}}">
+                    <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                        <view class="cell">
+                            <view class="cell-hd">
+                                <image class="icon" src="../../image/icon_API_HL.png" mode="aspectFill" />
+                            </view>
+                            <view class="cell-bd nowrap">
+                                <text class="name">{{item.title}}</text>
+                            </view>
+                            <view class="cell-arrow"></view>
+                        </view>
+                        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+        <view class="line t"></view>
+        <view class="line"></view>
+    </view>
+</view>

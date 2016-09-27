@@ -1,0 +1,39 @@
+@import "../list/list.wxss";
+@import "../list/listimage.wxss";
+.container{
+    background-color:#f3f3f5;
+}
+.swiper-item{
+    position: relative;
+}
+.swiper-item image{
+    width: 100%;
+    display: block;
+}
+.swiper-item text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding: 20rpx;
+}
+.nav-item{
+    padding: 10rpx;
+}
+.nav-item image{
+    margin: 0 auto;
+    width: 100rpx;
+    height: 100rpx;
+    display: block;
+    border-radius: 50%;
+    border:1px #cfcfcf solid;
+}
+.nav-item text{
+    display: block;
+    margin-top: 20rpx;
+    font-size: 14px;
+}

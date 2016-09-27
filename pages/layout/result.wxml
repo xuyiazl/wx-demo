@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="widget-row widget-padding-v">
+        <view class="cloumn">
+            <view class="placeholder">接收内容 : {{title}}</view>
+        </view>
+    </view>
+</view>

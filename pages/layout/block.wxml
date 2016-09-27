@@ -1,0 +1,40 @@
+<view class="container">
+    <view class="block margin">
+        <view class="header">
+	        <view>我是header</view>
+            <view class="line"></view>            
+	    </view>
+        <view class="body padding padding-v">
+            我是内容
+        </view>
+        <view class="footer">
+            <view class="line t"></view>        
+            我是footer
+        </view>
+        <view class="line t"></view>
+        <view class="line"></view>
+    </view>
+    <view class="block margin">
+        <view class="header">
+	        <view class="title title-green">我是header</view>
+	        <navigator class="more" url="#">更多</navigator>
+            <view class="line"></view>            
+	    </view>
+        <view class="body padding padding-v">
+            <view class="row center">
+                <view class="cloumn padding-v">
+                    body
+                </view>
+                <view class="cloumn padding-v">
+                    body
+                </view>
+            </view>
+        </view>
+        <view class="footer">
+            <view class="line t"></view>        
+            <navigator class="more" url="#">查看更多</navigator>
+        </view>
+        <view class="line t"></view>
+        <view class="line"></view>
+    </view>
+</view>

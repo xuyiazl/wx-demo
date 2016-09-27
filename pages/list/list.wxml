@@ -1,0 +1,75 @@
+<view class="container">
+    <view class="block margin">
+        <view class="header">
+	        <view class="title title-red">热门新闻</view>
+	        <navigator class="more" url="#">更多</navigator>
+	    </view>
+        <view class="body">
+            <view class="ui-list">
+                <block wx:for-items="{{list}}">
+                    <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                        <view class="cell">
+                            <view class="cell-bd nowrap">
+                                <text class="name">{{item.title}}</text>
+                            </view>
+                            <view class="cell-arrow"></view>
+                        </view>
+                        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="block margin">
+        <view class="header">
+	        <view class="title title-red">热门新闻</view>
+	        <navigator class="more" url="#">更多</navigator>
+	    </view>
+        <view class="body">
+            <view class="ui-list">
+                <block wx:for-items="{{list}}">
+                    <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                        <view class="cell">
+                            <view class="cell-hd">
+                                <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                            </view>
+                            <view class="cell-bd nowrap">
+                                <text class="name">{{item.title}}</text>
+                            </view>
+                            <view class="cell-arrow"></view>
+                        </view>
+                        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+        <view class="footer">
+            <view class="line t"></view>        
+            <navigator class="more" url="#">查看更多</navigator>
+        </view>
+    </view>
+    <view class="block margin">
+        <view class="header">
+	        <view class="title title-red">热门新闻</view>
+	        <navigator class="more" url="#">更多</navigator>
+	    </view>
+        <view class="body">
+            <view class="ui-list">
+                <block wx:for-items="{{list}}">
+                    <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                        <view class="cell">
+                            <view class="cell-hd">
+                                <image class="icon" src="../../image/icon_API_HL.png" mode="aspectFill" />
+                            </view>
+                            <view class="cell-bd nowrap">
+                                <text class="name">{{item.title}}</text>
+                            </view>
+                            <view class="cell-arrow"></view>
+                        </view>
+                        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="container">
+	<scroll-view scroll-y style="height:100%;" bindscroll="scroll" scroll-into-view="{{toView}}">
+        <view class="ui-list" id="head">
+			<!--自定义导航，暂时仿微信的通讯录-->
+	        <block wx:for-items="{{menulist}}" wx:for-item="item" wx:for-index="ndx">
+	            <navigator url="{{item.url}}" class="item">
+	                <view class="cell">
+	                    <view class="cell-hd">
+	                        <image class="picture" src="{{item.img}}" mode="aspectFill" />
+	                    </view>
+	                    <view class="cell-bd nowrap">
+	                        <text class="name">{{item.title}}</text>
+	                    </view>
+	                    <view class="cell-arrow"></view>
+	                </view>
+	                <view class="line {{ndx == 0 ? 'line-first' : ''}}"></view>
+	            </navigator>
+	        </block>
+	    </view>
+	    <block wx:for-items="{{list}}" wx:for-item="group" wx:for-index="idx">
+            <!--分组标签-->
+	        <view class="groupname" id="{{group.letter == '#'?'other':group.letter}}">{{group.letter}}</view>
+	        <view class="ui-list">
+				<!--通讯录列表-->
+	            <block wx:for-items="{{group.items}}" wx:for-item="item" wx:for-index="ndx">
+	                <navigator url="{{item.url}}" class="item">
+	                    <view class="cell">
+	                        <view class="cell-hd">
+	                            <image class="picture" src="{{item.img}}" mode="aspectFill" />
+	                        </view>
+	                        <view class="cell-bd nowrap">
+	                            <text class="name">{{item.title}}</text>
+	                        </view>
+	                    </view>
+	                    <view class="line {{ndx == 0 ? 'line-first' : ''}}"></view>
+	                </navigator>
+	            </block>
+	        </view>
+	    </block>
+		<!--快捷导航-->
+	    <view class="search-wrap">
+	        <view class="letter">
+	            <block wx:for-items="{{navletter}}" wx:for-item="letter" wx:for-index="idx">
+	                <view bindtap="sorttap" id="{{letter}}">{{letter}}</view>
+	            </block>
+	        </view>
+	    </view>
+	</scroll-view>
+</view>

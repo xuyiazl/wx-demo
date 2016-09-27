@@ -1,0 +1,34 @@
+@import "../list/listmedia.wxss";
+@import "../list/listimage.wxss";
+
+.container{
+    background-color:#fff;
+}
+.tabs .tab{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 1em;
+    padding: 30rpx 0;
+    color: #888888;
+    position: relative;
+}
+.tabs .tab .underline{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 10rpx;
+    right: 0;
+    height: 4rpx;
+    background-color: transparent;
+}
+.tabs .tab.active{
+    color: #09bb07;
+}
+.tabs .tab.active .underline{
+    background-color: #09bb07;
+}
+.tab-content{
+    display: initial!important;
+    height: auto!important;
+    overflow: auto;
+}
