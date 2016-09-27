@@ -8,7 +8,7 @@
 .groupname{
     padding: 10rpx 40rpx;
     background-color: #f3f3f5;
-    font-size: .9rem;
+    font-size: 28rpx;
 }
 .search-wrap{
     position: fixed;
@@ -27,5 +27,5 @@
 .search-wrap .letter view{
     color: #576b95;
     padding: 4rpx 0;
-    font-size: 14px;
+    font-size: 28rpx;
 }

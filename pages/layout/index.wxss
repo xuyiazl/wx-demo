@@ -18,7 +18,7 @@
     background-color: rgba(0,0,0,.6);
     color: #ffffff;
     text-align: center;
-    font-size: 14px;
+    font-size: 28rpx;
     padding: 20rpx;
 }
 .nav-item{
@@ -35,5 +35,5 @@
 .nav-item text{
     display: block;
     margin-top: 20rpx;
-    font-size: 14px;
+    font-size: 28rpx;
 }

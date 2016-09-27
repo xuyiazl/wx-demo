@@ -1,29 +1,29 @@
-/**index.wxss**/
-.container {
-    background-color:#ffffff;
-    background:url(/image/bg/1.jpg) no-repeat;
-    background-size:cover;
-    background-position: fixed;
-}
-.userinfo {
-    display: flex;
-    flex-direction: column;
-	  align-items: center;
-}
+/**main.wxss**/
 
-.userinfo-avatar {
-    width: 160rpx;
-    height: 160rpx;
-    margin: 20rpx;
-    border-radius: 50%;
-    box-shadow: 0 0 4px rgba(0,0,0,.3);
+@import "list/list.wxss";
+@import "list/listmedia.wxss";
+@import "list/listimage.wxss";
+
+.container{
+    background-color:#f3f3f5;
 }
-.navigator{
-    margin: 40rpx;
-    padding: 10rpx 20rpx;
-    border-radius: 4px;
-    background-color: rgba(255,255,255,.3);
-    box-shadow: 0 0 4px rgba(0,0,0,.3);
+.swiper-item{
+    position: relative;
+}
+.swiper-item image{
+    width: 100%;
+    display: block;
+}
+.swiper-item text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    color: #ffffff;
+    text-align: center;
+    font-size: 32rpx;
+    padding: 20rpx;
 }
 .nav-item{
     padding: 10rpx;
@@ -34,22 +34,44 @@
     height: 100rpx;
     display: block;
     border-radius: 50%;
-    background-color: #ffffff;
+    border:1px #cfcfcf solid;
 }
 .nav-item text{
     display: block;
     margin-top: 20rpx;
-    font-size: 14px;
-    color: #fff;
+    font-size: 32rpx;
 }
-.usermotto {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100rpx;
-    line-height: 100rpx;
-    text-align: center;
-    font-size: 14px;
-    color: #576b95;
+.hot{
+    position: relative;
+    padding: 20rpx;
+}
+.hot .left{
+    color: #e64340;
+    font-size: 32rpx;
+    line-height: 1rem;
+    font-weight: 700;
+    font-style:italic;
+    margin-right: 20rpx;
+    padding-right: 20rpx;
+    border-right:2rpx #F0F0F0 solid;
+}
+.hot .left text{
+    display: block;
+}
+.hot .right{
+    height: 2.4rem;
+    font-size: 28rpx;
+    line-height: 1.2rem;
+    padding-right:20rpx;
+    overflow: hidden;
+}
+.hot .right .item{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.hot .right .item text{
+    margin-right: 10rpx;
+    color: #888888;
 }

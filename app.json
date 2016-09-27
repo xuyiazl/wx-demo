@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/main",
     "pages/index",
     "pages/layout/block",
     "pages/layout/index",
@@ -17,36 +18,21 @@
     "navigationBarTitleText": "demo",
     "navigationBarTextStyle":"white"
   },
-  "tabBar1": {
+  "tabBar": {
     "color": "#dddddd",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [{
-      "pagePath": "pages/layout/index",
+      "pagePath": "pages/main",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/index",
       "iconPath": "image/icon_API.png",
       "selectedIconPath": "image/icon_API_HL.png",
       "text": "布局"
-    },{
-      "pagePath": "pages/layout/layout-tab",
-      "iconPath": "image/icon_API.png",
-      "selectedIconPath": "image/icon_API_HL.png",
-      "text": "tab布局"
-    },{
-      "pagePath": "pages/list/list",
-      "iconPath": "image/icon_API.png",
-      "selectedIconPath": "image/icon_API_HL.png",
-      "text": "列表"
-    },{
-      "pagePath": "pages/list/listmedia",
-      "iconPath": "image/icon_API.png",
-      "selectedIconPath": "image/icon_API_HL.png",
-      "text": "媒体列表"
-    },{
-      "pagePath": "pages/list/listimage",
-      "iconPath": "image/icon_API.png",
-      "selectedIconPath": "image/icon_API_HL.png",
-      "text": "图片列表"
     }]
   },
   "networkTimeout": {
