@@ -34,16 +34,15 @@
                 <text>新闻</text>
 	        </view>
             <view class="right cloumn">
-	            <navigator url="#">
-                    <view class="item">
-                        <text>·</text>冯珊珊：原作中国体育行业的的小白鼠
-                    </view>
-	            </navigator>
-	            <navigator url="#">
-                    <view class="item">
-	                    <text>·</text>冯珊珊：想成为鲍尔默的女人
-                    </view>
-	            </navigator>
+	            <view animation="{{animation}}">
+                    <block wx:for-items="{{headlines}}">
+                        <navigator url="{{item.url}}">
+                            <view class="item">
+                                <text>·</text>{{item.text}}
+                            </view>
+                        </navigator>
+                    </block>
+                </view>
             </view>
         </view>
         <view class="line"></view>
