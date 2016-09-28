@@ -1,6 +1,3 @@
-@import "../../wxss/list.wxss";
-@import "../../wxss/listnavigator.wxss";
-
 
 .ui-list-navigator{
     overflow: auto;
