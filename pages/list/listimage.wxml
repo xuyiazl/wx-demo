@@ -1,11 +1,12 @@
 <view class="container">
     <view class="block margin">
         <view class="header">
+            <view class="line-b"></view>
 	        <view class="title title-red">热门新闻</view>
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list-image cloumn2" style="margin-top:0;">
+            <view class="ui-list-image cloumn2">
                 <block wx:for-items="{{list4}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view>
@@ -16,11 +17,11 @@
             </view>
         </view>
         <view class="footer">
-            <view class="line t"></view>        
+            <view class="line-t"></view>        
             <navigator class="more" url="#">查看更多</navigator>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block margin">
         <view class="header">
@@ -39,8 +40,8 @@
                 </block>
             </view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block margin">
         <view class="header">
@@ -59,8 +60,8 @@
                 </block>
             </view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block margin">
         <view class="header">
@@ -79,7 +80,7 @@
                 </block>
             </view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
 </view>

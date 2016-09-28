@@ -10,7 +10,7 @@
                 </view>
             </block>
         </view>
-	    <view class="line"></view>
+	    <view class="line-b"></view>
     </view>
     <swiper class="tab-content" bindchange="tabchange" current="{{current}}" duration="{{duration}}">
         <swiper-item>
@@ -44,7 +44,7 @@
                                     </view>
                                 </view>
                             </view>
-                            <view class="{{index > 0 ? 'line' : ''}}"></view>
+                            <view class="{{index > 0 ? 'line-t' : ''}}"></view>
                         </navigator>
                     </block>
                 </view>

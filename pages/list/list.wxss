@@ -27,22 +27,10 @@
     font-size: 34rpx;
     line-height: 1.2rem;
 }
-.ui-list .item .line{
-    content: " ";
-    position: absolute;
+.ui-list .item .line-t{
     left: 40rpx;
-    top: 0;
-    right: 0;
-    height: 2rpx;
-    background-color: #F0F0F0;
 }
-.ui-list .item .line-first{
+.ui-list .item .line-t.first{
     left: 0;
     right: 0;
-}
-.ui-list .item .line-last{
-    left: 0;
-    right: 0;
-    top:initial;
-    bottom: 0;
 }

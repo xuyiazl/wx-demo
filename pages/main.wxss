@@ -30,8 +30,8 @@
 }
 .nav-item image{
     margin: 0 auto;
-    width: 100rpx;
-    height: 100rpx;
+    width: 80rpx;
+    height: 80rpx;
     display: block;
     border-radius: 50%;
     border:1px #cfcfcf solid;
@@ -39,7 +39,7 @@
 .nav-item text{
     display: block;
     margin-top: 20rpx;
-    font-size: 34rpx;
+    font-size: 32rpx;
 }
 .hot{
     position: relative;
@@ -75,7 +75,7 @@
     margin-right: 10rpx;
     color: #888888;
 }
-view.block .hot .line{
+view.block .hot .line-t{
     left: 20rpx;
     right: 20rpx;
 }

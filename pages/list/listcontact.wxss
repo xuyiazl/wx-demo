@@ -2,9 +2,6 @@
 .container{
     background-color: #fff;
 }
-.ui-list .item .line-first{
-    display: none;
-}
 .groupname{
     padding: 10rpx 40rpx;
     background-color: #f3f3f5;

@@ -29,7 +29,7 @@
                 </view>
             </block>
         </view>
-        <view class="line"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block margin">
         <view class="header">
@@ -48,8 +48,8 @@
                 </block>
             </view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block margin">
         <view class="header">
@@ -69,8 +69,8 @@
                 </view>
             </scroll-view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block">
         <view class="header">
@@ -90,12 +90,12 @@
                             </view>
                             <view class="cell-arrow"></view>
                         </view>
-                        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+                        <view class="line-t {{index == 0 ? 'first' : ''}}"></view>
                     </navigator>
                 </block>
             </view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
 </view>

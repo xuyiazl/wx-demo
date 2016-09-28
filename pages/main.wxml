@@ -28,7 +28,7 @@
             </block>
         </view>
         <view class="row hot vcenter">
-            <view class="line t"></view>
+            <view class="line-t"></view>
             <view class="left">
                 <text>头条</text>
                 <text>新闻</text>
@@ -45,7 +45,7 @@
                 </view>
             </view>
         </view>
-        <view class="line"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block margin">
         <view class="header">
@@ -64,8 +64,8 @@
                 </block>
             </view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block margin">
         <view class="header">
@@ -85,8 +85,8 @@
                 </view>
             </scroll-view>
         </view>
-        <view class="line t"></view>
-        <view class="line"></view>
+        <view class="line-t"></view>
+        <view class="line-b"></view>
     </view>
     <view class="block">
         <view class="header">
@@ -110,7 +110,7 @@
                                 </view>
                             </view>
                         </view>
-                        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+                        <view class="line-t {{index == 0 ? 'first' : ''}}"></view>
                     </navigator>
                 </block>
             </view>

@@ -1,0 +1,31 @@
+@import "../../wxss/list.wxss";
+@import "../../wxss/listnavigator.wxss";
+
+
+.ui-list-navigator{
+    overflow: auto;
+    background-color: #fff;
+    position: relative;
+}
+.ui-list-navigator .item{
+    width: 33.33333333333336%;
+    height: 200rpx;
+    float: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+.ui-list-navigator .item .content{
+    clear: both;
+}
+.ui-list-navigator .item .icon{
+    width: 80rpx;
+    height: 80rpx;
+}
+.ui-list-navigator .item .name{
+    margin-top: 10rpx;
+    font-size: 28rpx;
+    display: block;
+}

@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="block transparent">
+        <view class="body">
+            <view class="title title-red">腾讯服务</view>
+            <view class="ui-list-navigator">
+                <block wx:for-items="{{menulist1}}">
+                    <navigator url="{{item.url}}">
+                        <view class="item">
+                            <view class="content">
+                                <image class="icon" src="{{item.icon}}" mode="aspectFill" />                        
+                                <text class="name">{{item.title}}</text>
+                            </view>
+                            <view class="line-b"></view>
+                            <view class="line-r {{index%3==2?'none':''}}"></view>
+                        </view>
+                    </navigator>
+                </block>
+                <view class="line-t"></view>
+                <view class="line-b"></view>
+            </view>
+        </view>
+    </view>
+    <view class="block transparent">
+        <view class="body">
+            <view class="title title-red">第三方服务</view>
+            <view class="ui-list-navigator">
+                <block wx:for-items="{{menulist2}}">
+                    <navigator url="{{item.url}}">
+                        <view class="item">
+                            <view class="content">
+                                <image class="icon" src="{{item.icon}}" mode="aspectFill" />                        
+                                <text class="name">{{item.title}}</text>
+                            </view>
+                            <view class="line-b"></view>
+                            <view class="line-r {{index%3==2?'none':''}}"></view>
+                        </view>
+                    </navigator>
+                </block>
+                <view class="line-t"></view>
+                <view class="line-b"></view>
+            </view>
+        </view>
+    </view>
+</view>

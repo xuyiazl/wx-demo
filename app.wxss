@@ -79,19 +79,6 @@ view.block{
 view.block.transparent{
     background-color: transparent;
 }
-view.block .line{
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 2rpx;
-    background-color: #F0F0F0;
-}
-view.block .line.t{
-    top: 0;
-    bottom: inherit;
-}
 view.block .header{
     display: flex;
     align-items: center;
@@ -124,9 +111,48 @@ view.block .footer{
 }
 view.block .footer .more{
     display: block;
-    font-size: 32rpx;
+    font-size: 28rpx;
     color: #576b95;
     flex: 1;
+}
+/*线条*/
+.line-t,
+.line-b,
+.line-l,
+.line-r{
+    content: " ";
+    position: absolute;
+    background-color: #F0F0F0;
+}
+.line-t{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2rpx;
+}
+.line-b{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rpx;
+}
+.line-l{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2rpx;
+}
+.line-r{
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2rpx;
+}
+.line-t.none,
+.line-b.none,
+.line-l.none,
+.line-r.none{
+    display: none;
 }
 /*标题*/
 view.title{

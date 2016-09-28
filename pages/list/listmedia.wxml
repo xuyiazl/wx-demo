@@ -21,13 +21,13 @@
                                 </view>
                             </view>
                         </view>
-                        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+                        <view class="line-t {{index == 0 ? 'first' : ''}}"></view>
                     </navigator>
                 </block>
             </view>
         </view>
         <view class="footer">
-            <view class="line t"></view>        
+            <view class="line-t"></view>        
             <navigator class="more" url="#">查看更多</navigator>
         </view>
     </view>

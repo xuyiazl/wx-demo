@@ -10,7 +10,8 @@
     "pages/list/list",
     "pages/list/listcontact",
     "pages/list/listmedia",
-    "pages/list/listimage"
+    "pages/list/listimage",
+    "pages/list/listnavigator"
   ],
   "window":{
     "backgroundTextStyle":"light",
