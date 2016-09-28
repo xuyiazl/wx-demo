@@ -101,7 +101,7 @@ view.block .header{
 }
 view.block .header view{
     flex: 1;
-    font-size: 1rem;
+    font-size: 36rpx;
     font-weight: 700;
 }
 view.block .header view.title{
@@ -131,7 +131,7 @@ view.block .footer .more{
 /*标题*/
 view.title{
     font-weight:700;
-    font-size:1rem;
+    font-size:36rpx;
     margin:40rpx 0;
     padding:0 30rpx;
     color:#353535;
@@ -153,7 +153,7 @@ view.title-gray{
     border-left-color: #888888;
 }
 view.title text{
-    font-size:.8rem;
+    font-size:28rpx;
     color:#888888;
     margin-left:20rpx;
     font-weight:normal;
