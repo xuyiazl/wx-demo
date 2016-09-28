@@ -158,3 +158,33 @@ view.title text{
     margin-left:20rpx;
     font-weight:normal;
 }
+.bg-red{
+    background-color: #e64340;
+}
+.bg-blue{
+    background-color: #576b95;
+}
+.bg-green{
+    background-color: #09bb07;
+}
+.bg-black{
+    background-color: #353535;
+}
+.bg-gray{
+    background-color: #888888;
+}
+.color-red{
+    color: #e64340;
+}
+.color-blue{
+    color: #576b95;
+}
+.color-green{
+    color: #09bb07;
+}
+.color-black{
+    color: #353535;
+}
+.color-gray{
+    color: #888888;
+}

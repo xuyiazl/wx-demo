@@ -1,5 +1,5 @@
 <view class="container">
-    <view class="block tabs">
+    <view class="block tabs bg-blue">
         <view class="row">
             <block wx:for="{{tabs}}">
                 <view class="cloumn center">

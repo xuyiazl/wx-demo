@@ -7,7 +7,7 @@
 .tabs .tab{
     display: inline-block;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 32rpx;
     padding: 30rpx 0;
     color: #888888;
     position: relative;
@@ -16,9 +16,9 @@
     content: " ";
     position: absolute;
     left: 0;
-    bottom: 10rpx;
+    bottom: 0;
     right: 0;
-    height: 4rpx;
+    height: 6rpx;
     background-color: transparent;
 }
 .tabs .tab.active{
