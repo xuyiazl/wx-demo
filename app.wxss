@@ -158,7 +158,7 @@ view.block .footer .more{
 view.title{
     font-weight:700;
     font-size:36rpx;
-    margin:40rpx 0;
+    margin:30rpx 0;
     padding:0 30rpx;
     color:#353535;
     border-left:10rpx transparent solid;    

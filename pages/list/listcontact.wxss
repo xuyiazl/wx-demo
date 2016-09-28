@@ -3,7 +3,7 @@
     background-color: #fff;
 }
 .groupname{
-    padding: 10rpx 40rpx;
+    padding: 10rpx 30rpx;
     background-color: #f3f3f5;
     font-size: 32rpx;
 }

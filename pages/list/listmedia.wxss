@@ -3,7 +3,7 @@
 .ui-list .item .picture{
     width: 180rpx;
     height: 140rpx;
-    margin-right: 40rpx;
+    margin-right: 30rpx;
     display: block;
 }
 .ui-list .item .name{

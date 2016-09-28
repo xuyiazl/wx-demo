@@ -1,10 +1,7 @@
 
 .ui-list .item{
     position: relative;
-    padding-top: 26rpx;
-    padding-bottom: 26rpx;
-    padding-left: 40rpx;
-    padding-right: 30rpx;
+    padding: 26rpx 30rpx;
 }
 .ui-list .item .nowrap{
     text-overflow: ellipsis;
@@ -20,7 +17,7 @@
 .ui-list .item .picture{
     width: 80rpx;
     height: 80rpx;
-    margin-right: 40rpx;
+    margin-right: 30rpx;
     display: block;
 }
 .ui-list .item .name{
@@ -28,7 +25,7 @@
     line-height: 1.2rem;
 }
 .ui-list .item .line-t{
-    left: 40rpx;
+    left: 30rpx;
 }
 .ui-list .item .line-t.first{
     left: 0;
