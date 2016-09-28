@@ -75,7 +75,7 @@ Page( {
             list2:app.getData(10)
         });
     
-        this.rollAnimationInterval(this.data.rollData.length,2,22,3000);
+        this.rollAnimationInterval(this.data.rollData.length,1,24,3000);
     },
     onReady: function() {
         this.rollAnimation = wx.createAnimation();

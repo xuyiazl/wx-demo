@@ -27,11 +27,9 @@
                 </view>
             </block>
         </view>
-        <view class="row hot vcenter">
-            <view class="line-t"></view>
+        <view class="roll row vcenter">
             <view class="left">
                 <text>头条</text>
-                <text>新闻</text>
 	        </view>
             <view class="right cloumn">
 	            <view animation="{{rollAnimation}}">
