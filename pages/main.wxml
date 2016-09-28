@@ -34,8 +34,8 @@
                 <text>新闻</text>
 	        </view>
             <view class="right cloumn">
-	            <view animation="{{animation}}">
-                    <block wx:for-items="{{headlines}}">
+	            <view animation="{{rollAnimation}}">
+                    <block wx:for-items="{{rollData}}">
                         <navigator url="{{item.url}}">
                             <view class="item">
                                 <text>·</text>{{item.text}}

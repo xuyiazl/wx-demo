@@ -18,7 +18,13 @@ Page({
                 name: '布局',
                 open: false,
                 pages: [{url:'layout/layout',text:'布局插件'},{url:'layout/index',text:'首页布局'}, {url:'layout/layout-tab',text:'tab布局视图'}]
-            }
+            },
+            {
+                id: 'animation',
+                name: '动画效果',
+                open: false,
+                pages: [{url:'animation/roll',text:'滚动新闻'}]
+            },
         ]
     },
     widgetsToggle: function (e) {

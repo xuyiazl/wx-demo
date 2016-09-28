@@ -1,0 +1,21 @@
+<view class="container">
+    <view class="block margin">
+        <view class="roll row vcenter">
+            <view class="left">
+                <text>头条</text>
+                <text>新闻</text>
+	        </view>
+            <view class="right cloumn">
+	            <view animation="{{rollAnimation}}">
+                    <block wx:for-items="{{rollData}}">
+                        <navigator url="{{item.url}}">
+                            <view class="item">
+                                <text>·</text>{{item.text}}
+                            </view>
+                        </navigator>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

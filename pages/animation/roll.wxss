@@ -1,0 +1,35 @@
+
+.roll{
+    position: relative;
+    padding: 20rpx;
+}
+.roll .left{
+    color: #e64340;
+    font-size: 34rpx;
+    line-height: 1.2rem;
+    font-weight: 700;
+    font-style:italic;
+    margin-right: 20rpx;
+    padding-right: 20rpx;
+    border-right:2rpx #F0F0F0 solid;
+}
+.roll .left text{
+    display: block;
+}
+.roll .right{
+    height: 44px;
+    font-size: 32rpx;
+    line-height: 22px;
+    padding-right:20rpx;
+    overflow: hidden;
+}
+.roll .right .item{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.roll .right .item text{
+    margin-right: 10rpx;
+    color: #888888;
+}

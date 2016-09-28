@@ -11,7 +11,8 @@
     "pages/list/listcontact",
     "pages/list/listmedia",
     "pages/list/listimage",
-    "pages/list/listnavigator"
+    "pages/list/listnavigator",
+    "pages/animation/roll"
   ],
   "window":{
     "backgroundTextStyle":"light",
