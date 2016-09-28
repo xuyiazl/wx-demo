@@ -85,7 +85,7 @@ Page( {
         var that = this;
         var current = 0;
         var line = 2;//每次翻滚的行
-        var height = 24 * line;//设置每次翻滚的高度，无法获取适配的高度，得固定
+        var height = 22 * line;//设置每次翻滚的高度，无法获取适配的高度，得固定
         setInterval( function() {
             that.animation.translate( 0, -current * height ).step()
             that.setData( { animation: that.animation.export() })

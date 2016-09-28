@@ -124,7 +124,7 @@ view.block .footer{
 }
 view.block .footer .more{
     display: block;
-    font-size: 28rpx;
+    font-size: 32rpx;
     color: #576b95;
     flex: 1;
 }

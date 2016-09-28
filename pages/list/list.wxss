@@ -24,7 +24,7 @@
     display: block;
 }
 .ui-list .item .name{
-    font-size: 32rpx;
+    font-size: 34rpx;
     line-height: 1.2rem;
 }
 .ui-list .item .line{

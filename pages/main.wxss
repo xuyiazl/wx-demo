@@ -22,7 +22,7 @@
     background-color: rgba(0,0,0,.6);
     color: #ffffff;
     text-align: center;
-    font-size: 32rpx;
+    font-size: 34rpx;
     padding: 20rpx;
 }
 .nav-item{
@@ -39,7 +39,7 @@
 .nav-item text{
     display: block;
     margin-top: 20rpx;
-    font-size: 32rpx;
+    font-size: 34rpx;
 }
 .hot{
     position: relative;
@@ -47,7 +47,7 @@
 }
 .hot .left{
     color: #e64340;
-    font-size: 32rpx;
+    font-size: 34rpx;
     line-height: 1.2rem;
     font-weight: 700;
     font-style:italic;
@@ -59,9 +59,9 @@
     display: block;
 }
 .hot .right{
-    height: 48px;
-    font-size: 28rpx;
-    line-height: 24px;
+    height: 44px;
+    font-size: 32rpx;
+    line-height: 22px;
     padding-right:20rpx;
     overflow: hidden;
 }
@@ -74,4 +74,8 @@
 .hot .right .item text{
     margin-right: 10rpx;
     color: #888888;
+}
+view.block .hot .line{
+    left: 20rpx;
+    right: 20rpx;
 }

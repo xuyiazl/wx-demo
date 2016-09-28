@@ -7,7 +7,7 @@
 .tabs .tab{
     display: inline-block;
     margin: 0 auto;
-    font-size: 32rpx;
+    font-size: 36rpx;
     padding: 30rpx 0;
     color: #888888;
     position: relative;
