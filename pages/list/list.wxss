@@ -24,6 +24,22 @@
     font-size: 34rpx;
     line-height: 1.2rem;
 }
+.ui-list .item .badge{
+    float: right;
+    font-size:26rpx;
+    line-height: 1;
+    margin-top: 2rpx;
+    padding: 8rpx 10rpx;
+    color: #fff;
+    background-color: #e64340;
+    border-radius: 20rpx;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+.ui-list .item .badge.none{
+    display: none;
+}
 .ui-list .item .line-t{
     left: 30rpx;
 }

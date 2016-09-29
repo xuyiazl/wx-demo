@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/list/list",
     "pages/main",
     "pages/index",
     "pages/layout/block",
@@ -7,7 +8,6 @@
     "pages/layout/layout",
     "pages/layout/layout-tab",
     "pages/layout/result",
-    "pages/list/list",
     "pages/list/listwechat",
     "pages/list/listcontact",
     "pages/list/listmedia",

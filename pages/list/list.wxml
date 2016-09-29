@@ -11,6 +11,7 @@
                         <view class="cell">
                             <view class="cell-bd nowrap">
                                 <text class="name">{{item.title}}</text>
+                                <view class="badge">特价</view>
                             </view>
                             <view class="cell-arrow"></view>
                         </view>
