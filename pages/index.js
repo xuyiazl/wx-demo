@@ -11,7 +11,7 @@ Page({
                 id: 'listview',
                 name: '列表',
                 open: false,
-                pages: [{url:'list/list',text:'基础列表'}, {url:'list/listnavigator',text:'九宫格列表'}, {url:'list/listcontact',text:'通讯录列表'},{url:'list/listmedia',text:'媒体列表'}, {url:'list/listimage',text:'图片列表'}]
+                pages: [{url:'list/list',text:'基础列表'},{url:'list/listwechat',text:'聊天列表(仿微信)'}, {url:'list/listnavigator',text:'九宫格列表'}, {url:'list/listcontact',text:'通讯录列表'},{url:'list/listmedia',text:'媒体列表'}, {url:'list/listimage',text:'图片列表'}]
             },
             {
                 id: 'layoutview',

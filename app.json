@@ -8,6 +8,7 @@
     "pages/layout/layout-tab",
     "pages/layout/result",
     "pages/list/list",
+    "pages/list/listwechat",
     "pages/list/listcontact",
     "pages/list/listmedia",
     "pages/list/listimage",

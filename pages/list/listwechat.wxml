@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="block margin">
+        <view class="body">
+            <view class="ui-list ui-list-wechat">
+                <block wx:for-items="{{list}}">
+                    <navigator url="{{item.url}}" class="item">
+                        <view class="cell">
+                            <view class="cell-hd">
+                                <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                            </view>
+                            <view class="cell-bd nowrap">
+                                <text class="name">{{item.name}}</text>
+	                            <text class="remark">{{item.remark}}</text>
+                            </view>
+                        </view>
+	                    <view class="time">{{item.time}}</view>
+                        <view class="line-t {{index == 0 ? 'first' : ''}}"></view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+	    <view class="line-t"></view>
+	    <view class="line-b"></view>
+    </view>
+</view>

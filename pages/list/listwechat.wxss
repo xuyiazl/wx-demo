@@ -1,0 +1,28 @@
+
+@import "list.wxss";
+
+.ui-list.ui-list-wechat .item .picture{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 4px;
+    margin-right: 30rpx;
+}
+.ui-list.ui-list-wechat .item .name{
+    font-size: 34rpx;
+}
+.ui-list.ui-list-wechat .item .remark{
+    display: block;
+    margin-top: 10rpx;
+    font-size: 28rpx;
+    color: #888;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ui-list.ui-list-wechat .item .time{
+    position: absolute;
+    right: 30rpx;
+    top: 26rpx;
+    font-size: 28rpx;
+    color: #888;
+}
