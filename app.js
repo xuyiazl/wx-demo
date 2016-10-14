@@ -4,29 +4,7 @@ App( {
   },
   globalData: {
     hasLogin: false,
-    userInfo: null,
-    HOME_URL: ''
-  },
-  get: function( url, params, cb ) {
-    this.request( 'GET', url, params, cb );
-  },
-  post: function( url, params, cb ) {
-    this.request( 'POST', url, params, cb );
-  },
-  request: function( method, url, params, cb ) {
-    wx.request( {
-      url: this.globalData.HOME_URL + url,
-      data: params,
-      method: method,//默认为 GET，有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-      header: {
-        'Content-Type': 'application/json'
-      },
-      success: function( res ) {
-        cb && cb( res );
-      },
-      fail: function( res ) { },
-      complete: function( res ) { }
-    });
+    userInfo: null
   },
   getUserInfo: function( cb ) {
     var that = this
@@ -102,7 +80,7 @@ App( {
     ];
 
     var tmp = [];
-    for( ndx = 1;ndx <= len;ndx++ ) {
+    for(var ndx = 1;ndx <= len;ndx++ ) {
       var item = data[ parseInt( 6 * Math.random() ) ];
       item.id = ndx;
       tmp.push( item );
@@ -168,7 +146,7 @@ App( {
     ];
 
     var tmp = [];
-    for( ndx = 1;ndx <= len;ndx++ ) {
+    for(var ndx = 1;ndx <= len;ndx++ ) {
       var item = data[ parseInt( 9 * Math.random() ) ];
       item.id = ndx;
       tmp.push( item );

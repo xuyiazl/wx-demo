@@ -1,4 +1,7 @@
 
+var util = require( '../utils/util.js' );
+var api = require( '../utils/api.js' );
+
 var app = getApp();
 
 Page( {
@@ -62,6 +65,7 @@ Page( {
     },
     onLoad: function() {
         var that = this;
+        
         /*
         app.getUserInfo( function( userInfo ) {
             //更新数据
@@ -72,15 +76,15 @@ Page( {
         */
         this.setData( {
             list1: app.getData( 4 ),
-            list2:app.getData(10)
+            list2: app.getData( 10 )
         });
-    
-        this.rollAnimationInterval(this.data.rollData.length,1,24,3000);
+
+        this.rollAnimationInterval( this.data.rollData.length, 1, 24, 3000 );
     },
     onReady: function() {
         this.rollAnimation = wx.createAnimation();
     },
-    rollAnimationInterval: function(dataCount,lineCount,lineHeight, timeout ) {
+    rollAnimationInterval: function( dataCount, lineCount, lineHeight, timeout ) {
         //头条新闻往上滚动效果
         var that = this;
         var current = 0;
@@ -91,7 +95,7 @@ Page( {
             that.rollAnimation.translate( 0, -current * height ).step()
             that.setData( { rollAnimation: that.rollAnimation.export() })
             current++;
-            if( current * height >=  total)
+            if( current * height >= total )
                 current = 0;
         }, timeout );
     }
