@@ -18,7 +18,7 @@
 .ui-list-image .item .name{
     margin-top:20rpx;
     font-size: 34rpx;
-    line-height: 1.2rem;
+    line-height: 1.2;
     text-align: left;
     display: block;
     white-space:inherit;

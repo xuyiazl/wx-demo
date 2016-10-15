@@ -1,5 +1,5 @@
 <view class="container">
-	<scroll-view scroll-y style="height:100%;" bindscroll="scroll" scroll-into-view="{{toView}}">
+	<scroll-view scroll-y="true" style="height:100%;" bindscroll="scroll" scroll-into-view="{{toView}}">
         <view class="ui-list" id="head">
 			<!--自定义导航，暂时仿微信的通讯录-->
 	        <block wx:for-items="{{menulist}}" wx:for-item="item" wx:for-index="ndx">
@@ -37,13 +37,13 @@
 	            </block>
 	        </view>
 	    </block>
-		<!--快捷导航-->
-	    <view class="search-wrap">
-	        <view class="letter">
-	            <block wx:for-items="{{navletter}}" wx:for-item="letter" wx:for-index="idx">
-	                <view bindtap="sorttap" id="{{letter}}">{{letter}}</view>
-	            </block>
-	        </view>
-	    </view>
 	</scroll-view>
+	<!--快捷导航-->
+	<view class="search-wrap">
+		<view class="letter">
+			<block wx:for-items="{{navletter}}" wx:for-item="letter" wx:for-index="idx">
+				<view bindtap="sorttap" id="{{letter}}">{{letter}}</view>
+			</block>
+		</view>
+	</view>
 </view>

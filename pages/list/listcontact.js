@@ -1,10 +1,10 @@
 var app = getApp()
 Page( {
     data: {
-        toView: null,
-        navletter:[],
+        toView: 'head',
+        navletter: [],
         list: [],
-        menulist:[
+        menulist: [
             {
                 title: '新的朋友',
                 url: '/pages/layout/result?title=navigate1',
@@ -20,7 +20,7 @@ Page( {
                 url: '/pages/layout/result?title=navigate3',
                 img: '/image/icon64_appwx_logo.png'
             }
-	    ]
+        ]
     },
     onLoad: function() {
         var _self = this;
@@ -38,7 +38,7 @@ Page( {
             return _self.makePy( b.title.charAt( 0 ) )[ 0 ].toUpperCase() < _self.makePy( a.title.charAt( 0 ) )[ 0 ].toUpperCase() ? 1 : -1;
         }
         data.sort( asc_sort );
-        
+
         var list = [];
         //检查是否存在
         var findLetter = function( letter ) {
@@ -71,14 +71,14 @@ Page( {
             return b.letter < a.letter ? 1 : -1;
         });
         //右侧快捷导航letter，
-        var navletter = ['☆'];//默认星号，实际根据自己的情况设置
-        for(var k in list){
-            navletter.push(list[k].letter);
+        var navletter = [ '☆' ];//默认星号，实际根据自己的情况设置
+        for( var k in list ) {
+            navletter.push( list[ k ].letter );
         }
 
         this.setData( {
             list: list,
-            navletter:navletter
+            navletter: navletter
         });
     },
     sorttap: function( e ) {
