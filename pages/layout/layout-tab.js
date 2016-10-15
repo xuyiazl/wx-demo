@@ -24,7 +24,7 @@ Page( {
     },
     onLoad: function() {
         this.setData( {
-            list1: app.getShortData(24),
+            list1: app.getShortData(6),
             list2: app.getData(24),
             list3: app.getShortData(24)
         });
@@ -32,7 +32,7 @@ Page( {
     tab: function( e ) {
         var tabs = this.data.tabs;
         var current = 0;
-        for( ndx = 0;ndx < tabs.length;ndx++ ) {
+        for(var ndx = 0;ndx < tabs.length;ndx++ ) {
             if( e.currentTarget.id == tabs[ ndx ].id ) {
                 tabs[ ndx ].active = true;
                 current = ndx;
@@ -47,7 +47,7 @@ Page( {
     },
     tabchange: function( e ) {
         var tabs = this.data.tabs;
-        for( ndx = 0;ndx < tabs.length;ndx++ ) {
+        for(var ndx = 0;ndx < tabs.length;ndx++ ) {
             tabs[ ndx ].active = e.detail.current == ndx;
         }
         this.setData( {
@@ -58,7 +58,7 @@ Page( {
         //下拉到底加载新数据
         var list = this.data.list2;
         var tmp = app.getData(10)
-        for(ndx = 0;ndx < tmp.length;ndx++){
+        for(var ndx = 0;ndx < tmp.length;ndx++){
             tmp[ndx].id = tmp[ndx].id+ndx+1;
             list.push(tmp[ndx]);
         }

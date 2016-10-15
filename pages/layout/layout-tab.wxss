@@ -28,7 +28,6 @@
     background-color: #09bb07;
 }
 .tab-content{
-    display: initial!important;
-    height: auto!important;
+    height: 300px;
     overflow: auto;
 }
