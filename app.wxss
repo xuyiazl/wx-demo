@@ -45,6 +45,10 @@ page{
     display: flex;
     align-items: center;
 }
+.cell-column{
+    flex-direction: column;
+    align-items:inherit;
+}
 .cell .cell-bd{
     flex:1;
 }

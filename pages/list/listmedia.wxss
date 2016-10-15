@@ -1,12 +1,19 @@
 @import "list.wxss";
 
-.ui-list .item .picture{
+.ui-list-media .item .picture{
     width: 180rpx;
     height: 140rpx;
     margin-right: 30rpx;
     display: block;
 }
-.ui-list .item .name{
+.ui-list-media .item .cell-column .picture{
+    width: 100%;
+    height: 300rpx;
+    margin-right: 0;
+    margin-bottom: 26rpx;
+    display: block;
+}
+.ui-list-media .item .name{
     font-size: 34rpx;
     line-height: 1.2rem;
     white-space:inherit;
@@ -16,18 +23,18 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
-.ui-list .item .remark{
+.ui-list-media .item .remark{
     margin-top: 10rpx;
     font-size: 26rpx;
     color: #cecece;
     display: block;
 }
-.ui-list .item .remark text{
+.ui-list-media .item .remark text{
 	float: left;
     padding-right: 20rpx;
     text-align: left;
 }
-.ui-list .item .remark text.extra{
+.ui-list-media .item .remark text.extra{
 	padding-left: 20rpx;
     border-left: 1px solid #CECECE;
 }

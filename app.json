@@ -8,9 +8,9 @@
     "pages/layout/layout-tab",
     "pages/layout/result",
     "pages/list/list",
+    "pages/list/listmedia",
     "pages/list/listwechat",
     "pages/list/listcontact",
-    "pages/list/listmedia",
     "pages/list/listimage",
     "pages/list/listnavigator",
     "pages/animation/roll"

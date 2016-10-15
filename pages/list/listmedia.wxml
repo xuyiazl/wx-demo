@@ -5,7 +5,7 @@
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list">
+            <view class="ui-list ui-list-media">
                 <block wx:for-items="{{list}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view class="cell">
