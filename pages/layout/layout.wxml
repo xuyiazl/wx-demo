@@ -1,39 +1,39 @@
 <view class="container">
     <view class="row padding-v">
-        <view class="cloumn">
+        <view class="column">
             <view class="placeholder">text</view>
         </view>
     </view>
     <view class="row padding-v">
-        <view class="cloumn">
+        <view class="column">
             <view class="placeholder">text</view>
         </view>
-        <view class="cloumn">
-            <view class="placeholder">text</view>
-        </view>
-    </view>
-    <view class="row padding-v">
-        <view class="cloumn">
-            <view class="placeholder">text</view>
-        </view>
-        <view class="cloumn">
-            <view class="placeholder">text</view>
-        </view>
-        <view class="cloumn">
+        <view class="column">
             <view class="placeholder">text</view>
         </view>
     </view>
     <view class="row padding-v">
-        <view class="cloumn">
+        <view class="column">
             <view class="placeholder">text</view>
         </view>
-        <view class="cloumn">
+        <view class="column">
             <view class="placeholder">text</view>
         </view>
-        <view class="cloumn">
+        <view class="column">
             <view class="placeholder">text</view>
         </view>
-        <view class="cloumn">
+    </view>
+    <view class="row padding-v">
+        <view class="column">
+            <view class="placeholder">text</view>
+        </view>
+        <view class="column">
+            <view class="placeholder">text</view>
+        </view>
+        <view class="column">
+            <view class="placeholder">text</view>
+        </view>
+        <view class="column">
             <view class="placeholder">text</view>
         </view>
     </view>

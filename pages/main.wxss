@@ -4,9 +4,6 @@
 @import "list/listmedia.wxss";
 @import "list/listimage.wxss";
 
-.container{
-    background-color:#f3f3f5;
-}
 .swiper-item{
     position: relative;
 }
@@ -21,8 +18,8 @@
     bottom: 0;
     background-color: rgba(0,0,0,.6);
     color: #ffffff;
-    text-align: center;
-    font-size: 34rpx;
+    text-align: left;
+    font-size: 28rpx;
     padding: 20rpx;
 }
 .nav-item{
@@ -30,8 +27,8 @@
 }
 .nav-item image{
     margin: 0 auto;
-    width: 80rpx;
-    height: 80rpx;
+    width: 90rpx;
+    height: 90rpx;
     display: block;
     border-radius: 50%;
     border:1px #cfcfcf solid;
@@ -43,15 +40,16 @@
 }
 .roll{
     position: relative;
-    padding: 10rpx 20rpx;
-    margin: 20rpx 20rpx 30rpx 20rpx;
-    background-color: #f3f3f5;
-    border-radius: 40rpx;
+    padding: 20rpx 30rpx;
+}
+.roll .line-t{
+    left: 30rpx;
+    right: 30rpx;
 }
 .roll .left{
     color: #e64340;
-    font-size: 32rpx;
-    line-height: 1.2rem;
+    font-size: 34rpx;
+    line-height: 1.4;
     font-weight: 700;
     font-style:italic;
     margin-right: 20rpx;
@@ -61,7 +59,7 @@
 }
 .roll .right{
     height: 24px;
-    font-size: 32rpx;
+    font-size: 28rpx;
     line-height: 24px;
     overflow: hidden;
 }
@@ -70,6 +68,8 @@
     overflow: hidden;
     white-space: nowrap;
     position: relative;
+    color: #353535;
+    font-weight: normal;
 }
 .roll .right .item text{
     margin-right: 10rpx;

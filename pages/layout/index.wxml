@@ -1,7 +1,7 @@
 <view class="container">
     <view class="block">
         <view class="row">
-            <view class="cloumn">
+            <view class="column">
                 <swiper style="height:200px" indicator-dots="{{indicatorDots}}"
                 autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
                 <block wx:for="{{swiperData}}">
@@ -19,7 +19,7 @@
         </view>
         <view class="row center margin">
             <block wx:for-items="{{navlist}}">
-                <view class="cloumn">
+                <view class="column">
                     <navigator url="{{item.url}}">
                         <view class="nav-item">
                             <image src="{{item.icon}}"></image>
@@ -37,7 +37,7 @@
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list-image cloumn2" style="margin-top:0;">
+            <view class="ui-list-image column2" style="margin-top:0;">
                 <block wx:for-items="{{list1}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view>
@@ -58,7 +58,7 @@
 	    </view>
         <view class="body">
             <scroll-view scroll-x="true" class="scroll-view-h">
-                <view class="ui-list-image cloumn2" style="margin-top:0;">
+                <view class="ui-list-image column2" style="margin-top:0;">
                     <block wx:for-items="{{list1}}">
                         <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                             <view>

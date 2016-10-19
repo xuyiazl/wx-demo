@@ -1,7 +1,7 @@
 <view class="container">
     <view class="block">
         <view class="row">
-            <view class="cloumn">
+            <view class="column">
                 <swiper indicator-dots="{{indicatorDots}}"
                 autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
                 <block wx:for="{{swiperData}}">
@@ -17,7 +17,7 @@
         </view>
         <view class="row center margin">
             <block wx:for-items="{{navlist}}">
-                <view class="cloumn">
+                <view class="column">
                     <navigator url="{{item.url}}">
                         <view class="nav-item">
                             <image src="{{item.icon}}"></image>
@@ -28,13 +28,14 @@
             </block>
         </view>
         <view class="roll row vcenter">
+	        <view class="line-t"></view>
             <view class="left">
-                <text>头条</text>
+                <text>HOT</text>
 	        </view>
-            <view class="right cloumn">
-	            <view animation="{{rollAnimation}}">
+            <view class="right column">
+                <view animation="{{rollAnimation}}">
                     <block wx:for-items="{{rollData}}">
-                        <navigator url="{{item.url}}">
+                        <navigator url="{{item.ID}}">
                             <view class="item">
                                 <text>·</text>{{item.text}}
                             </view>
@@ -51,7 +52,7 @@
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list-image cloumn2" style="margin-top:0;">
+            <view class="ui-list-image column2" style="margin-top:0;">
                 <block wx:for-items="{{list1}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view>
@@ -72,7 +73,7 @@
 	    </view>
         <view class="body">
             <scroll-view scroll-x="true" class="scroll-view-h">
-                <view class="ui-list-image cloumn2" style="margin-top:0;">
+                <view class="ui-list-image column2" style="margin-top:0;">
                     <block wx:for-items="{{list1}}">
                         <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                             <view>
@@ -86,7 +87,7 @@
         <view class="line-t"></view>
         <view class="line-b"></view>
     </view>
-    <view class="block">
+    <view class="block margin">
         <view class="header">
 	        <view>热门新闻</view>
 	        <navigator class="more" url="#">更多</navigator>
@@ -97,6 +98,37 @@
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view class="cell">
                             <view class="cell-hd">
+                                <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                            </view>
+                            <view class="cell-bd">
+                                <text class="name">{{item.title}}</text>
+                                <view class="remark">
+                                    <text>{{item.source}}</text>
+                                    <text>{{item.time}}</text>
+                                    <text class="extra">其他信息</text>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="line-t {{index == 0 ? 'first' : ''}}"></view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="block">
+        <view class="header">
+	        <view>热门视频</view>
+	        <navigator class="more" url="#">更多</navigator>
+	    </view>
+        <view class="body">
+            <view class="ui-list ui-list-media">
+                <block wx:for-items="{{list2}}">
+                    <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                        <view class="cell">
+                            <view class="cell-hd">
+                                <view class="video">
+	                                <view class="icon"><view></view></view>
+	                            </view>
                                 <image class="picture" src="{{item.img}}" mode="aspectFill" />
                             </view>
                             <view class="cell-bd">

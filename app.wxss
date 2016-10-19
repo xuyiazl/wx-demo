@@ -2,13 +2,13 @@
 /*字体大小 20，18，17，16，14，13，11（pt）*/
 page{
 	background-color:#f3f3f5;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
 .container {
     height: 100%;
     min-height: 100%;
     overflow: auto;
     box-sizing: border-box;
-    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
 .padding-v{
     padding-left: 30rpx;
@@ -28,16 +28,19 @@ page{
 .row-column{
     flex-direction: column;
 }
+.row-layout{
+    height:100%;
+}
 .row.center,
-.row .cloumn.center{
+.row .column.center{
     align-items: center;
     text-align: center;
 }
 .row.vcenter,
-.row .cloumn.vcenter{
+.row .column.vcenter{
     align-items: center;
 }
-.row .cloumn{
+.row .column{
     flex: 1;
 }
 /*列布局*/
@@ -51,6 +54,7 @@ page{
 }
 .cell .cell-bd{
     flex:1;
+    position: relative;
 }
 view.block .header .more,
 view.block .footer .more,
@@ -76,25 +80,35 @@ view.block .footer .more:after,
     margin-top: -3px;
     right: 2px;
 }
+view.block .header .more.arrow-none,
+view.block .footer .more.arrow-none{
+    padding-right: 0;
+}
+view.block .header .more.arrow-none:after,
+view.block .footer .more.arrow-none:after{
+    display: none;
+}
 /*块样式*/
 view.block{
     background-color: #fff;
     position: relative;
     overflow:hidden;
 }
+.transparent,
 view.block.transparent{
     background-color: transparent;
 }
 view.block .header{
+    background-color: #fff;
     display: flex;
     align-items: center;
     padding: 30rpx 20rpx;
-    line-height: 1rem;
+    line-height: 1;
     position: relative;
 }
 view.block .header view{
     flex: 1;
-    font-size: 36rpx;
+    font-size: 34rpx;
     font-weight: 700;
 }
 view.block .header view.title{
@@ -103,7 +117,7 @@ view.block .header view.title{
 }
 view.block .header .more{
     padding-top: 1px;
-    font-size: 14rpx;
+    font-size: 26rpx;
     color: #888888;
 }
 view.block .body{
@@ -117,7 +131,7 @@ view.block .footer{
 }
 view.block .footer .more{
     display: block;
-    font-size: 28rpx;
+    font-size: 26rpx;
     color: #576b95;
     flex: 1;
 }
@@ -164,7 +178,7 @@ view.block .footer .more{
 view.title{
     font-weight:700;
     font-size:36rpx;
-    margin:30rpx 0;
+    margin:40rpx 0;
     padding:0 30rpx;
     color:#353535;
     border-left:10rpx transparent solid;    
@@ -219,4 +233,20 @@ view.title text{
 }
 .color-gray{
     color: #888888;
+}
+.loadingText{
+    margin-top: 10rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 28rpx;
+}
+.loadingText image{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ui-content{
+    padding: 26rpx 30rpx;
 }

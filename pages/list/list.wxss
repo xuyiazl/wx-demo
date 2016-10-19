@@ -1,7 +1,7 @@
 
 .ui-list .item{
     position: relative;
-    padding: 26rpx 30rpx;
+    padding:26rpx 30rpx;
 }
 .ui-list .item .nowrap{
     text-overflow: ellipsis;
@@ -21,8 +21,8 @@
     display: block;
 }
 .ui-list .item .name{
-    font-size: 34rpx;
-    line-height: 1.2rem;
+    font-size: 32rpx;
+    line-height: 1.2;
 }
 .ui-list .item .badge{
     float: right;
@@ -36,6 +36,11 @@
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
+}
+.ui-list .item .badge.gray{
+    color: #888;
+    background-color: transparent;
+    border-radius: 0;
 }
 .ui-list .item .badge.none{
     display: none;

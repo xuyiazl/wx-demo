@@ -22,10 +22,10 @@
 	    </view>
         <view class="body padding padding-v">
             <view class="row center">
-                <view class="cloumn padding-v">
+                <view class="column padding-v">
                     body
                 </view>
-                <view class="cloumn padding-v">
+                <view class="column padding-v">
                     body
                 </view>
             </view>

@@ -17,8 +17,8 @@
 }
 .ui-list-image .item .name{
     margin-top:20rpx;
-    font-size: 34rpx;
-    line-height: 1.2;
+    font-size: 32rpx;
+	line-height: 1.2;
     text-align: left;
     display: block;
     white-space:inherit;
@@ -28,31 +28,31 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
-.ui-list-image.cloumn2{
+.ui-list-image.column2{
     margin-right: -40rpx;
 }
-.ui-list-image.cloumn2 .item{
+.ui-list-image.column2 .item{
     width:50%;
 }
-.ui-list-image.cloumn2 .item .picture{
+.ui-list-image.column2 .item .picture{
     height:200rpx;
 }
-.ui-list-image.cloumn3{
+.ui-list-image.column3{
     margin-right: -60rpx;
 }
-.ui-list-image.cloumn3 .item{
+.ui-list-image.column3 .item{
     width:33.33333333333336%;    
 }
-.ui-list-image.cloumn3 .item .picture{
+.ui-list-image.column3 .item .picture{
     height:160rpx;
 }
-.ui-list-image.cloumn4{
+.ui-list-image.column4{
     margin-right: -80rpx;
 }
-.ui-list-image.cloumn4 .item{
+.ui-list-image.column4 .item{
     width:25%;
 }
-.ui-list-image.cloumn4 .item .picture{
+.ui-list-image.column4 .item .picture{
     height:120rpx;
 }
 /*scrollview 横向切换*/

@@ -2,7 +2,7 @@
     <view class="block tabs">
         <view class="row">
             <block wx:for="{{tabs}}">
-                <view class="cloumn center">
+                <view class="column center">
                     <view id="{{item.id}}" class="tab {{item.active?'active':''}}" bindtap="tab">
                         <text>{{item.name}}</text>
                         <view class="underline"></view>
@@ -15,7 +15,7 @@
     <swiper class="tab-content" bindchange="tabchange" current="{{current}}" duration="{{duration}}">
         <swiper-item>
             <scroll-view scroll-y style="height:100%;">
-                    <view class="ui-list-image cloumn3">
+                    <view class="ui-list-image column3">
                         <block wx:for-items="{{list1}}">
                             <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                                 <view>
@@ -29,7 +29,7 @@
         </swiper-item>
         <swiper-item>
             <scroll-view scroll-y style="height:100%;" bindscroll="scroll" bindscrolltolower="lower">
-                <view class="ui-list">
+                <view class="ui-list ui-list-media">
                     <block wx:for-items="{{list2}}">
                         <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                             <view class="cell">
@@ -52,7 +52,7 @@
         </swiper-item>
         <swiper-item>
             <scroll-view scroll-y style="height:100%;">
-                    <view class="ui-list-image cloumn3">
+                    <view class="ui-list-image column3">
                         <block wx:for-items="{{list3}}">
                             <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                                 <view>

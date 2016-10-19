@@ -6,7 +6,7 @@
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list-image cloumn2">
+            <view class="ui-list-image column2">
                 <block wx:for-items="{{list4}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view>
@@ -29,7 +29,7 @@
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list-image cloumn2" style="margin-top:0;">
+            <view class="ui-list-image column2" style="margin-top:0;">
                 <block wx:for-items="{{list4}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view>
@@ -49,7 +49,7 @@
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list-image cloumn3" style="margin-top:0;">
+            <view class="ui-list-image column3" style="margin-top:0;">
                 <block wx:for-items="{{list6}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view>
@@ -69,7 +69,7 @@
 	        <navigator class="more" url="#">更多</navigator>
 	    </view>
         <view class="body">
-            <view class="ui-list-image cloumn4" style="margin-top:0;">
+            <view class="ui-list-image column4" style="margin-top:0;">
                 <block wx:for-items="{{list8}}">
                     <navigator id="{{item.id}}" url="{{item.url}}" class="item">
                         <view>
